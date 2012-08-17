@@ -88,7 +88,8 @@ td { vertical-align: top; }
 */
 
 div[role=main] {
-  overflow: auto;  
+  overflow: auto;
+  height: 80%;
 }
 
 html {
@@ -96,7 +97,10 @@ html {
 
   font-family: Georgia, serif;
   height: 100%;
-  overflow: hidden;  
+}
+body {
+  overflow: hidden; 
+  height: 100%;
 }
 
 h1 {
@@ -154,6 +158,10 @@ li[role="item"] > a.medialink {
   background-size: cover;
 }
 
+li.waitingForAnimation {
+  visibility: hidden;
+}
+
 li[role="item"] > a.medialink > img {
   max-width: 70px;
   max-height: 70px;
@@ -177,7 +185,7 @@ ul.itemlist {
 
 
 /* =============================================================================
-   Media Queries
+   Media Queries  
    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
