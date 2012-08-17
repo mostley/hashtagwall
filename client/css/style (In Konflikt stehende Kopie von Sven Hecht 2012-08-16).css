@@ -74,103 +74,49 @@ td { vertical-align: top; }
    Author: Sven Hecht
    ========================================================================== */
 
-/* 
-  Scheme: http://colorschemedesigner.com/#3z21Tw0w0w0w0
-
-  Color1:  #0c5da5 rgb(12,93,165)
-  Color2:  #408dd2 rgb(64,141,210)
-  Color3:  #679fd2 rgb(103,159,210)
-  Color4:  #ff9500 rgb(255,149,0)
-  Color4a: #ffb040 rgb(255,176,64)
-  Color4b: #ffc573 rgb(255,197,115)
-  Color5:  #043a6b 
-  Color6:  #26537c
-*/
-
-div[role=main] {
-  overflow: auto;  
-}
 
 html {
-  background-image: -webkit-linear-gradient(top, #408dd2, #679fd2);
+  background-image: linear-gradient(bottom, rgb(145,229,74) 20%, rgb(174,255,104) 60%, rgb(209,255,136) 80%);
+  background-image: -o-linear-gradient(bottom, rgb(145,229,74) 20%, rgb(174,255,104) 60%, rgb(209,255,136) 80%);
+  background-image: -moz-linear-gradient(bottom, rgb(145,229,74) 20%, rgb(174,255,104) 60%, rgb(209,255,136) 80%);
+  background-image: -webkit-linear-gradient(bottom, rgb(145,229,74) 20%, rgb(174,255,104) 60%, rgb(209,255,136) 80%);
+  background-image: -ms-linear-gradient(bottom, rgb(145,229,74) 20%, rgb(174,255,104) 60%, rgb(209,255,136) 80%);
+
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.2, rgb(145,229,74)),
+    color-stop(0.6, rgb(174,255,104)),
+    color-stop(0.8, rgb(209,255,136))
+  );
 
   font-family: Georgia, serif;
   height: 100%;
-  overflow: hidden;  
 }
 
 h1 {
+  color: #4F5E67;
+  letter-spacing: .024em;
+  -webkit-transition: font-size .7s linear;
+  -moz-transition: font-size .7s linear;
+  -o-transition: font-size .7s linear;
+  -ms-transition: font-size .7s linear;
+  transition: font-size .7s linear;
   font-family: Cuprum, sans-serif;
   font-size: 5em;
   margin: 30px;
-
-  text-shadow: 1px 4px 6px #408DD2, 0 0 0 black, 1px 4px 6px #408DD2;
-  color: rgba(4,58,107, 0.8);
 }
 
-li[role="item"] {
+div[role="item"] {
   margin: 10px;
   padding: 1px 10px 10px 10px;
   width: 40%;
   margin-left: 30%;
   border-radius: 15px;
-  background-image: -webkit-linear-gradient(bottom, rgba(255,149,0, 1) 20%, rgba(255,176,64, 1) 80%);
-  color: #043a6b;
-  box-shadow: inset 0 1px 0 rgba(255,255,255,.5), inset 0 -2px 0 rgba(0,0,0,.25), inset 0 -3px 0 rgba(255,255,255,.2), 5px 5px 10px #043a6b;
-
-  position: relative;
-  margin-top: 45px;
-  font-family: Georgia, serif;
-
-  height: 150px;
+  background-image: -webkit-linear-gradient(bottom, rgba(100, 100, 100, 0.6) 20%, rgba(80, 80, 80, 0.6) 80%);
 }
 
-li[role="item"] > h3 {
-  font-family: Cuprum, sans-serif;
-  margin-left: 15px;
-}
-
-li[role="item"] > blockquote {
-  display: inline;
-  vertical-align: top;
-  font-style: italic;
-}
-
-li[role="item"] > a.medialink {
-  display: inline-block;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  -webkit-box-shadow: inset 0 1px 5px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .9), 0 -1px 0 rgba(0, 0, 0, .6);
-  -moz-box-shadow: inset 0 1px 5px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .9), 0 -1px 0 rgba(0, 0, 0, .6);
-  box-shadow: inset 0 1px 5px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .9), 0 -1px 0 rgba(0, 0, 0, .6);
-  max-width: 70px;
-  max-height: 70px;
-  margin-left: 30px;
-
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-li[role="item"] > a.medialink > img {
-  max-width: 70px;
-  max-height: 70px;
-}
-
-li[role="item"] > p[role="contentinfo"] {
-  float: right;
-  font-size: 0.8em;
-  margin-top: 20px;
-  margin-right: 8px;
-}
-
-ul.itemlist {
-  list-style-type: none;
-  margin-top: 5px;
-  font-family: Cuprum, sans-serif;
-}
 
 
 
